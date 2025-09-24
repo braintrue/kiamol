@@ -135,3 +135,13 @@ kubectl port-forward deploy/numbers-web 8090:80
 > #API에서 생성한 무작위 숫자 7을 읽어 와 화면에 출력합니다.
 > Here it is: 7
 > (Using API at: http://numbers-api/sixeyed/kiamol/master/ch03/numbers/rng) #계속해서 API 파드와 통신할 수 있다는 점을 확인할 수 있습니다.
+
+배운 점
+
+Deployment는 Pod 수명과 상태를 자동 관리한다.
+
+Service를 생성해야 내부 DNS로 통신 가능
+
+포드 삭제 후에도 Deployment가 새로운 Pod를 자동 생성
+
+웹-API 구조에서 Service를 통해 안정적으로 연결 가능
